@@ -26,3 +26,15 @@ First, give to the following parameters the proper values:
  - smsPass: The pass available on the "Notifications par SMS" webpage
  - waitingTime: The time (in seconds) each user should wait before sending you two sms (default is 5 minutes)
 
+Then simply start the bot:
+
+python2 bot.py
+
+
+The bot accepts anybody adding him as a contact, and will send via sms every message it receives in this form:
+
+"jid: message"
+
+Jid being the jabber id of the user messaging the bot.
+
+If the message doesn't go through, the bot will return an error message to the contact. Also, each contact has to wait a certain amount of time (a parameter above) between each message they can send you.
